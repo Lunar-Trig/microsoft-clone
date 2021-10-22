@@ -1,0 +1,198 @@
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color:black;
+    scrollbar-width: 2px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar{
+    font-size: medium;
+    width:93%;
+    max-width: 1100px;
+    margin:auto;
+    
+}
+
+/*Left-Navigation*/
+
+.left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:60px;
+}
+
+.left-nav ul{
+    padding:0px 0px 3px 11px;
+    display: flex;
+}
+
+.left-nav ul.nav-ul{
+    flex:1;
+}
+
+.ul-btns{
+    margin:12px 20px 2px 12px;
+}
+
+.ul-btns:hover{
+   border-bottom: 4px black solid;
+}
+
+/*Right-Navigation*/
+
+.right-nav{
+  position: relative;
+  left:49em; 
+  bottom:5ex;
+  
+}
+
+i{
+    padding: 3px;
+    margin-right: 1em;
+    size: 4;
+}
+
+/*Main-Body*/
+
+.main-body{
+    background: url('../images/window.jpg');
+    background-repeat:no-repeat;
+    background-size: 16in;
+    background-position: left;
+    height: 530px;
+    padding-bottom: 2em;
+}
+
+.container{
+    color:white;
+    margin-left: 1em;
+    padding-top: 6em;
+}
+
+
+
+p{
+    width: 23em;
+    font-size:large;
+    padding-top: 0;
+}
+
+
+.nav-btn{
+    color:black;
+    background-color: white;
+    width: fit-content;
+    padding:16px 18px;
+    font-family: Segoe UI Semibold;
+    font-size:larger;
+}
+
+
+.nav-btn .nav-link:hover{
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: none;
+}
+
+/*Main-Footer*/
+
+.footer-imgs{
+    display: inline-flex;
+    margin-right: 3em;
+}
+
+.f-img{
+    width: 1em;
+    padding-top: 10em;
+    padding-left: 143px;
+    margin-right: 7em;
+}
+ 
+
+.footer-nav{
+    padding-left: 0em;
+}
+
+.f-nav-link{
+    display: inline-block;
+    text-align: center;
+    font-weight:600;
+    font-size: x-large;
+    width:7em;
+    margin-left: 4em;
+}
+
+/*Media-Query*/
+
+@media screen and (max-width:1101px){
+/*Navbar*/
+.ul-btns{
+    visibility: hidden;
+}
+
+.nav-logo{
+    padding-left: 25em;
+}
+
+label{
+    visibility: hidden;
+}
+
+/*Main-Body*/
+    .main-body{
+        background-image: none;
+        background-color: gray;
+        height:496px;
+    }
+    
+    .container{
+        margin-top: 18em;
+    
+    }
+    
+    h1{
+        padding-left: 1em;
+    }
+    
+    p{
+        width:80%;
+        margin-left: 2em;
+    }
+
+    .nav-btn{
+        margin-left: 2em;
+    }
+
+/*Footer*/
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:11em;
+    bottom:33em;
+    
+}
+
+.f-nav-link{
+    width: 13em;
+    padding-bottom: 2em;
+}
+
+.footer-imgs{
+    display: flexbox;
+    flex-direction: column;
+}
+
+}
