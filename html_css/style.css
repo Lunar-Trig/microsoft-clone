@@ -20,7 +20,7 @@ ul{
     width:93%;
     max-width: 1100px;
     margin:auto;
-    
+    margin-top: 0;
 }
 
 /*Left-Navigation*/
@@ -54,8 +54,12 @@ ul{
 .right-nav{
   position: relative;
   left:51em; 
-  bottom:6ex;
+  bottom:13ex;
   
+}
+
+.img-1{
+    visibility: hidden;
 }
 
 label:hover{
@@ -77,7 +81,11 @@ i{
     background-position: left;
     height: 430px;
     padding-bottom: 2em;
+    border-top: rgb(6, 71, 97) 27px solid;
+    position: relative;
+    bottom: 4em;
 }
+
 .container{
     color:white;
     margin-left: 1em;
@@ -111,7 +119,6 @@ span{
 }
 
 /*Main-Footer*/
-
 .footer-imgs{
     display: inline-flex;
     padding-left: 0em;
@@ -141,8 +148,24 @@ span{
 
 @media screen and (max-width:920px){
 /*Navbar*/
+.nav-ul{
+   display:flex;
+   flex-direction: column;
+   background:rgba(107, 102, 102, 0.303);
+   opacity:0.5;
+   width:29em;
+   height:100%;
+   padding:30px;
+   position: absolute;
+   right:39em;
+   top:2em;
+}
+
 .ul-btns{
-    visibility: hidden;
+    word-spacing: 1em;
+    font-size: large;
+    font-weight: bold;
+    border-bottom: 2px black;
 }
 
 .nav-logo{
@@ -150,11 +173,15 @@ span{
     padding-left: 2em;
 }
 
-.right-nav,label{
-    position: absolute;
-   left:26em;
-    bottom:75em;
-    width: 12em;
+.img-1{
+    visibility:visible;
+    position: relative;
+    top:1em;
+    right:9em;
+}
+
+.img-2,.img-3,.img-4{
+    visibility: hidden;
 }
 
 label{
@@ -165,6 +192,7 @@ label{
 
     .main-body{
         background-image: none;
+        border:none;
         background-color: gray;
         height:456px;
     }
@@ -188,12 +216,13 @@ label{
     }
 
 /*Footer*/
+
 .footer-nav{
     display: flex;
     flex-direction: column;
     position: relative;
     left:11em;
-    bottom:46em;
+    bottom:49em;
     
 }
 
@@ -205,7 +234,7 @@ label{
 .footer-imgs{
     display: flexbox;
     flex-direction: column;
-    padding-bottom: 9em;
+    padding-bottom: 12em;
 }
 
 .f-img{
